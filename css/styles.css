@@ -1,0 +1,68 @@
+/* tart fonts */
+@font-face {
+  font-family: "Rework-regular";
+  src: url("/fonts/ReworkDisplayTRIAL-Regular-BF64b75902dd27b.otf");
+}
+@font-face {
+  font-family: "Rework-bold";
+  src: url("/fonts/ReworkHeadlineTRIAL-Bold-BF64b75902c7f85.otf");
+}
+/* End fonts */
+/* Start Variables */
+:root {
+  --clr-primary-400: #ffe042;
+  --clr-secondary-900: #1f1f1f;
+
+  --ff-regular: "Rework-regular", sans-serif;
+  --ff-bold: "Rework-bold", sans-serif;
+
+  --pd-main: 60px;
+}
+/* End Variables */
+/* Start Global Rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--ff-bold);
+  background-color: var(--clr-primary-400, #ffe042);
+}
+::selection {
+  background-color: var(--clr-primary-400, #ffe042);
+  color: var(--clr-secondary-900, #1f1f1f);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1270px) {
+  .container {
+    width: 1200px;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+
+/* End Header */
